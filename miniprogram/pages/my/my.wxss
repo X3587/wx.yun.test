@@ -1,0 +1,147 @@
+/* pages/my/my.wxss */
+.my {
+  background-color: #F2F2F2;
+  height: 100vh;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+}
+
+.my .top .head {
+  margin-right: 25rpx;
+}
+
+.my .top .head image {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.my .top .head .uname {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.my .coupon {
+  width: 95%;
+  height: 110rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.my .coupon .title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-left: 30rpx;
+}
+
+.my .coupon .jt {
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 10rpx;
+}
+
+.my .coupon .jt image {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.my .order {
+  width: 95%;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+
+.my .order .myorder {
+  height: 110rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my .order .myorder .title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-left: 30rpx;
+}
+
+.my .order .myorder .jt {
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #999999;
+  height: 45rpx;
+  margin-right: 10rpx;
+}
+
+.my .order .myorder .jt image {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.order_item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100rpx;
+  padding-bottom: 40rpx;
+}
+
+.order_item .order_item_index {
+  width: 120rpx;
+  text-align: center;
+}
+
+.order_item .order_item_index .img image {
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.order_item .order_item_index .title {
+  font-size: 26rpx;
+  color: #555555;
+}
+
+.bottom {
+  background-color: #fff;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  padding: 40rpx 0 10rpx 0;
+}
+
+.bottom_two {
+  width: 660rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.bottom .bottom_two .bottom_item_index {
+  width: 165rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.bottom .bottom_two .bottom_item_index .img image {
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.bottom .bottom_two .bottom_item_index .title {
+  font-size: 26rpx;
+  color: #555555;
+}

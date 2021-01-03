@@ -1,0 +1,14 @@
+<!--pages/home.wxml-->
+<view>
+	<view class="top">
+		<swiper autoplay="{{true}}" indicator-dots="{{true}}" circular="{{true}}" indicator-color="#fff" indicator-active-color="#999">
+			<view wx:for="{{list}}" wx:key="*this">
+				<swiper-item>
+					<view class="s_list" style="background-color:{{item}}">广告投放区{{index+1}}</view>
+				</swiper-item>
+			</view>
+		</swiper>
+	</view>
+  <view class="content">
+  </view>
+</view>

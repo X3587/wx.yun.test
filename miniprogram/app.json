@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/classification/classification"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "测试商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#1296DB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/index-c.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/fl-c.png",
+        "iconPath": "images/fl.png",
+        "pagePath": "pages/classification/classification",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "images/my-c.png",
+        "iconPath": "images/my.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

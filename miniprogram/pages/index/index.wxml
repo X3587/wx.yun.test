@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="userinfo">
+		<button class="login-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">用户一键登录</button>
+    <view class="resgiret">手机号验证注册/登录</view>
+	</view>
+	<view class="usermotto">
+		<text class="user-motto">
+    登录注册即代表你同意XXXX<text style="color:#37B55E">《服务协议》</text>与<text style="color:#37B55E">《隐私政策》</text>
+    </text>
+	</view>
+</view>

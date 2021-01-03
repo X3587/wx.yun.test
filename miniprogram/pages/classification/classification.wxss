@@ -1,0 +1,44 @@
+/* pages/classification/classification.wxss */
+.fl .top {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+
+.fl .top .inputs {
+  width: 100%;
+  border-radius: 40rpx;
+  text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: #F2F2F2;
+}
+
+.fl .content {
+  display: flex;
+}
+
+.left {
+  width: 220rpx;
+  text-align: center;
+  background-color: #F7F7F7;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  color: #666666;
+}
+
+.left .fl_name {
+  background-color: #fff;
+  border-left: 4rpx solid #3CB963;
+  color: #333333;
+  font-weight: bold;
+}
+
+.right {
+  background-color: #ccc;
+}
+.r_top{
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+}

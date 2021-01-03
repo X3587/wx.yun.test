@@ -1,0 +1,15 @@
+<!--pages/classification/classification.wxml-->
+<view class="fl">
+	<view class="top">
+		<input class="inputs" placeholder="青菜" placeholder-style="font-size:30rpx;color:#C3C3C3" />
+	</view>
+	<view class="content">
+		<scroll-view scroll-y="true" style="height: {{winHeight}}px;" class="left" scroll-with-animation="true">
+			<view wx:for="{{left_list}}" class="{{checkIndex ==  index ?'fl_name':''}}" wx:key="index" data-index="{{index}}" bindtap="leftClick">{{item}}</view>
+		</scroll-view>
+		<scroll-view scroll-y="true" style="height: {{winHeight}}px;" class="right" scroll-with-animation="true">
+		<view class="r_top"></view>
+			<view wx:for="{{right_list}}" wx:key="index" data-index="{{index}}" bindtap="leftClick">{{item}}</view>
+		</scroll-view>
+	</view>
+</view>

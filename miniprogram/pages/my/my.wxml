@@ -1,0 +1,54 @@
+<!--pages/my/my.wxml-->
+<view class="my">
+	<view class="top">
+		<view class="head">
+			<image mode="aspectFit" src="{{head}}" />
+		</view>
+		<view class="uname" wx:if="{{name !==''}}">{{name}}</view>
+		<view class="uname" wx:else bindtap="Login">立即登录</view>
+	</view>
+	<view class="coupon" bindtap="Tips">
+		<view class="title">我的优惠券</view>
+		<view class="jt">
+			<image src="https://7833-x3587-2xh2m-1302468156.tcb.qcloud.la/image/right.png?sign=2258ea5998b560ba55705c74f6369a2b&t=1609494921"></image>
+		</view>
+	</view>
+	<view class="order" bindtap="Tips">
+		<view class="myorder">
+			<view class="title">我的订单</view>
+			<view class="jt"><text>查看全部订单</text>
+				<image src="https://7833-x3587-2xh2m-1302468156.tcb.qcloud.la/image/right.png?sign=2258ea5998b560ba55705c74f6369a2b&t=1609494921"></image>
+			</view>
+		</view>
+		<view class="order_item">
+			<view class="order_item_index">
+				<view class="img">
+					<image mode="aspectFit" src="https://7833-x3587-2xh2m-1302468156.tcb.qcloud.la/image/zhifu.png?sign=b2ecaa83a1474e97c16fd64ddac59d2e&t=1609572683"></image>
+				</view>
+				<view class="title">待支付</view>
+			</view>
+			<view class="order_item_index">
+				<view class="img">
+					<image mode="aspectFit" src="https://7833-x3587-2xh2m-1302468156.tcb.qcloud.la/image/shouhuo.png?sign=e2ea22812ac85a67cc7b9ddc9291cf31&t=1609573451"></image>
+				</view>
+				<view class="title">待收货</view>
+			</view>
+			<view class="order_item_index">
+				<view class="img">
+					<image mode="aspectFit" src="https://7833-x3587-2xh2m-1302468156.tcb.qcloud.la/image/tuikuan.png?sign=a7ac7b7c38211d0b76a9712be7565427&t=1609573424"></image>
+				</view>
+				<view class="title">售后/退款</view>
+			</view>
+		</view>
+	</view>
+	<view class="bottom" bindtap="Tips">
+		<view class="bottom_two">
+			<view class="bottom_item_index" wx:for="{{settingList}}" wx:key="index">
+				<view class="img">
+					<image mode="aspectFit" src="{{item.icon}}"></image>
+				</view>
+				<view class="title">{{item.title}}</view>
+			</view>
+		</view>
+	</view>
+</view>
