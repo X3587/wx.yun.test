@@ -2,9 +2,10 @@
 <view class="my">
 	<view class="top">
 		<view class="head">
-			<image mode="aspectFit" src="{{head}}" />
+			<image mode="aspectFit" wx:if="{{isLogin}}" src="{{userInfo.avatarUrl}}" />
+			<image mode="aspectFit" wx:else src="{{head}}" />
 		</view>
-		<view class="uname" wx:if="{{name !==''}}">{{name}}</view>
+		<view class="uname" wx:if="{{isLogin}}">{{userInfo.nickName}}</view>
 		<view class="uname" wx:else bindtap="Login">立即登录</view>
 	</view>
 	<view class="coupon" bindtap="Tips">

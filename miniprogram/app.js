@@ -13,7 +13,9 @@ App({
         traceUser: true,
       })
     }
-
-    this.globalData = {}
+    this.globalData = {
+      openid:null,//
+      userInfo: null
+    }
   }
 })

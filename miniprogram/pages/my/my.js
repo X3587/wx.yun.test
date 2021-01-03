@@ -1,4 +1,5 @@
 // pages/my/my.js
+const app = getApp();
 Page({
 
   /**
@@ -14,14 +15,15 @@ Page({
       {title:"意见反馈",icon:"https://7833-x3587-2xh2m-1302468156.tcb.qcloud.la/image/yjfk.png?sign=d22755c3adddf74c7dd978044a55e19a&t=1609576447"},
       {title:"下载APP",icon:"https://7833-x3587-2xh2m-1302468156.tcb.qcloud.la/image/app.png?sign=8f39800cc6d0d18d75b9f50e0f57808a&t=1609578496"},
       {title:"设置",icon:"https://7833-x3587-2xh2m-1302468156.tcb.qcloud.la/image/sz.png?sign=5c9e1bae7d899c87da1b079edd90c500&t=1609576425"},
-    ]
+    ],
+    isLogin:false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+   
   },
 
   /**
@@ -35,7 +37,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log(app.globalData.userInfo,app.globalData.openid)
+    if(app.globalData.userInfo){
+      this.setData({
+        userInfo:app.globalData.userInfo,
+        isLogin:true
+      })
+    }
   },
 
   /**
